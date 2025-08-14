@@ -17,7 +17,7 @@ const svgstore = require('gulp-svgstore');
 function sprites() {
   return src('app/images/sprite/*.svg')
     .pipe(svgstore())
-    .pipe(desk('app/images'))
+    .pipe(dest('app/images'))
 }
 
 function pages() {
