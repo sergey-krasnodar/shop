@@ -54,7 +54,7 @@ function images() {
 
 
 function styles() {
-  return src('app/scss/style.scss')
+  return src('app/scss/*.scss')
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 versions']
     }))
@@ -80,7 +80,7 @@ function watching() {
       baseDir: 'app/'
     }
   });
-  watch(['app/scss/style.scss'],styles)
+  watch(['app/scss/*.scss'],styles)
   watch(['app/images/src'], images)
   watch(['app/images/sprite'], sprites)
   watch(['app/pages/*', 'app/components/*'], pages)
