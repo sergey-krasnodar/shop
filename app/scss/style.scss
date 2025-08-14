@@ -1,14 +1,53 @@
+@use 'reset';
+
 html,
 body{
-  min-height: 100vh;
+  height: 100%;
 }
 
 .wrapper{
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .main{
   flex: 1;
+}
+
+.container{
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header{
+  padding: 20px 0 40px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__logo{
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  &__lang{
+    display: flex;
+  }
+  &__menu-list{
+    display: flex;
+    gap: 30px;
+  }
+  &__icon{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+.logo{
+  display: inline-block;
 }
