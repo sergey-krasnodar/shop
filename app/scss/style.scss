@@ -46,3 +46,58 @@ body{
 .logo{
   display: inline-block;
 }
+
+.footer{
+  &__top{
+    padding: 55px 0 44px;
+    margin-bottom: 50px;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    line-height: 22px;
+    color: vars.$color-text-muted;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    gap: 83px;
+    margin-bottom: 51px;
+  }
+  &__bottom-item{
+    color: vars.$color-text-muted;
+    line-height: 22px;
+    font-size: 16px;
+  }
+  &__bottom-title{
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.5;
+    margin-bottom: 20px;
+  }
+  &__bottom-item-social{
+    display: flex;
+    gap: 10px;
+  }
+  &__form{
+    width: 250px;
+    position: relative;
+  }
+  &__form-btn{
+    position: absolute;
+    right: 0;
+    top: 8px;
+    @extend %btn;
+  }
+  &__input{
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid vars.$bg-primary;
+  }
+  &__input::placeholder{
+      color: vars.$color-text-muted;
+  }
+}
