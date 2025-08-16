@@ -1,1 +1,1 @@
-https://github.com/sergey-krasnodar/shop/dev/index.html
+https://github.com/sergey-krasnodar/shop/app/index.html
