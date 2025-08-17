@@ -127,12 +127,21 @@ body{
 }
 .new-collection{
   &__inner{
-    padding: 150px 39px;
+    position: relative;
+    padding: 150px 40px;
     display: flex;
     justify-content: space-between;
-    gap: 39px;
     font-family: 'Lora-Regular';
     color: #94897C;
+  }
+  &__decor{
+    position: absolute;
+    background-image: url('../images/new-collection-decor.svg');
+    background-repeat: no-repeat;
+    top: -170px;
+    left: -117px;
+    width: 500px;
+    height: 500px;
   }
   &__item{
     padding-top: 75px;
@@ -155,6 +164,11 @@ body{
     border: 1px solid #94897C;
     margin-top: auto;
     align-self: start;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
   }
   &__img{
     padding-top: 75px;
