@@ -103,8 +103,7 @@ body{
 }
 
 .top{
-  min-height: 879px;
-  background-image: url('../images/bg-top.jpg');
+  min-height: 90vh;
   @extend %bg-reset;
   &__inner{
     margin-left: 50%;
@@ -115,7 +114,7 @@ body{
     font-style: normal;
     font-weight: 400;
     font-size: 80px;
-    line-height: 120%;
+    line-height: 1.2;
     color: #3B2317;
     margin-bottom: 60px;
   }
@@ -124,5 +123,55 @@ body{
     background-color: #3B2317;
     border-radius: 3px;
     padding: 12px 38px;
+  }
+}
+.new-collection{
+  &__inner{
+    padding: 150px 39px;
+    display: flex;
+    justify-content: space-between;
+    gap: 39px;
+    font-family: 'Lora-Regular';
+    color: #94897C;
+  }
+  &__item{
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title{
+    color: #3B2317;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 58px;
+    margin-bottom: 50px;
+  }
+  &__text{
+    margin-bottom: 25px;
+    width: 403px;
+  }
+  &__link{
+    padding: 10px 66px;
+    border: 1px solid #94897C;
+    margin-top: auto;
+    align-self: start;
+  }
+  &__img{
+    padding-top: 75px;
+  }
+  &__box{
+    position: relative;
+    display: flex;
+  }
+  &__box-img{
+    position: absolute;
+    left: -115px;
+    top: 0;
+    max-width: fit-content;
+  }
+  &__box-text{
+    width: 289px;
+    margin-top: auto;
+    margin-bottom: 40px;
   }
 }
