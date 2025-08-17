@@ -29,10 +29,16 @@ $bg-primary: #E9E1D7;
   font-weight: 500;
 }
 
-%btn{
+%btn-reset{
   border: none;
     padding: 0;
     font-size: 0;
     background-color: transparent;
     cursor: pointer;
+}
+
+%bg-reset{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 }

@@ -89,7 +89,7 @@ body{
     position: absolute;
     right: 0;
     top: 8px;
-    @extend %btn;
+    @extend %btn-reset;
   }
   &__input{
     width: 100%;
@@ -99,5 +99,30 @@ body{
   }
   &__input::placeholder{
       color: vars.$color-text-muted;
+  }
+}
+
+.top{
+  min-height: 879px;
+  background-image: url('../images/bg-top.jpg');
+  @extend %bg-reset;
+  &__inner{
+    margin-left: 50%;
+    padding-top: 115px;
+  }
+  &__title{
+    font-family: 'Lora-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 120%;
+    color: #3B2317;
+    margin-bottom: 60px;
+  }
+  &__link{
+    color: #FFF;
+    background-color: #3B2317;
+    border-radius: 3px;
+    padding: 12px 38px;
   }
 }
