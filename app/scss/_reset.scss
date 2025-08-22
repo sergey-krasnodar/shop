@@ -45,6 +45,11 @@ select {
   font: inherit;
 }
 
+blockquote{
+  padding: 0;
+  margin: 0;
+}
+
 @media (favors-reduced-motion: reduce) {
 
   *,

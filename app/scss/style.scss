@@ -128,7 +128,7 @@ body{
 .new-collection{
   &__inner{
     position: relative;
-    padding: 150px 40px;
+    padding: 150px 0;
     display: flex;
     justify-content: space-between;
     font-family: 'Lora-Regular';
@@ -149,10 +149,6 @@ body{
     flex-direction: column;
   }
   &__title{
-    color: #3B2317;
-    font-weight: 400;
-    font-size: 45px;
-    line-height: 58px;
     margin-bottom: 50px;
   }
   &__text{
@@ -187,5 +183,110 @@ body{
     width: 289px;
     margin-top: auto;
     margin-bottom: 40px;
+  }
+}
+
+.join{
+    background-color: #E9E1D7;
+    &__inner{
+      display: flex;
+    }
+    &__content{
+      margin: 40px;
+    }
+    &__title{
+      margin-bottom: 20px;
+    }
+    &__text{
+      font-family: 'Lora-Regular';
+      font-size: 30px;
+      line-height: 38px;
+      color: #513C27;
+      margin-bottom: 40px;
+    }
+    &__input{
+      border: none;
+      border-bottom: 1.2px solid #94897C;
+      padding: 20px 0 5px;
+      width: 100%;
+      background-color: transparent;
+      &::placeholder{
+        color: #94897C;
+        font-size: 20px;
+        line-height: 27px;
+      }
+    }
+    &__btn{
+      width: 540px;
+      height: 50px;
+      margin: 40px 0 20px;
+      background-color: #3B2317;
+      color: #FFF;
+      border-radius: 9px;
+      font-size: 20px;
+      line-height: 27px;
+      cursor: pointer;
+    }
+    &__form-text{
+      font-size: 11px;
+      line-height: 130%;
+      color: #513C27;
+    }
+}
+
+.designer{
+  padding: 150px 0;
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    top: -210px;
+    left: 727px;
+    background-image: url('../images/decor-designer.svg');
+    @extend %bg-reset;
+        width: 500px;
+    height: 500px;
+
+  }
+  &__inner{
+    display: flex;
+  }
+  &__title{
+    margin-bottom: 50px;
+  }
+  &__text{
+    color: #94897C;
+    margin-bottom: 25px;
+    max-width: 404px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  &__show{
+    margin-left: auto;
+    text-align: center;
+  }
+  &__image{
+    position: relative;
+    margin-bottom: 40px;
+  }
+  &__box-blockquote{
+    position: absolute;
+    top: 178px;
+    left: -148px;
+    width: 296px;
+    height: 118px;
+    border: 1px solid #E9E1D7;
+    font-family: 'Lora-Regular';
+    background-color: #fff;
+  }
+  &__blockquote{
+    padding: 20px 18px;
+  }
+  &__link{
+    padding: 10px 93px;
+    color: #94897C;
+    font-size: 16px;
+    line-height: 22px;
+    border: 1px solid #E9E1D7;
   }
 }
